@@ -104,8 +104,6 @@ token:
 
 # MyBatisPlus配置
 mybatis-plus:
-  # 加载全局的配置文件
-  configLocation: classpath:mybatis/mybatis-config.xml
   # 搜索指定包别名
   typeAliasesPackage: com.zzyl.**.domain
   # 配置mapper的扫描，找到所有的mapper.xml映射文件
@@ -114,8 +112,8 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto   #id生成策略为自增
-#  configuration:
-#    map-underscore-to-camel-case: true    #字段与属性，自动转换为驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true    #字段与属性，自动转换为驼峰命名
 
 # PageHelper分页插件
 pagehelper:
