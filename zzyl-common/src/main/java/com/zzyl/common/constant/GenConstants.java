@@ -103,6 +103,9 @@ public class GenConstants
     /** 高精度计算类型 */
     public static final String TYPE_BIGDECIMAL = "BigDecimal";
 
+    /** JDK8时间类型 */
+    public static final String TYPE_LOCAL_DATE_TYPE= "LocalDateTime";
+
     /** 时间类型 */
     public static final String TYPE_DATE = "Date";
 
