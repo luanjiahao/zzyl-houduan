@@ -36,7 +36,7 @@ import io.swagger.annotations.ApiImplicitParams;
  */
 @Api(tags = "护理项目控制器")
 @RestController
-@RequestMapping("/serve/nursingProject")
+@RequestMapping("/serve/project")
 public class NursingProjectController extends BaseController
 {
     @Autowired
@@ -49,7 +49,7 @@ public class NursingProjectController extends BaseController
     @GetMapping("/list")
     @ApiOperation(value = "查询护理项目列表", notes = "根据护理项目条件查询护理项目列表")
     public TableDataInfo<List<NursingProject>> list(
-            @ApiParam(value = "护理项目查询条件", required = false) NursingProject nursingProject)
+            @ApiParam(value = "护理项目查询条件") NursingProject nursingProject)
     {
         startPage();
         List<NursingProject> list = nursingProjectService.selectNursingProjectList(nursingProject);
